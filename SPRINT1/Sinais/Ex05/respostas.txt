@@ -1,0 +1,16 @@
+a) CTRL-C interrompe a execução de uma função, sendo que envia um SIGINT. SIGINT na documentação de LINUX está específicado que "Interrupt from keyboard".
+
+b) O programa não parava de correr independetemente da quantidade de vezes que fosse inscrito CTRL-C
+
+c) O programa parou de correr, aparecendo a mensagem "^\make: *** [makefile:12: run] Quit (core dumped)", sendo que este comando envia o sinal SIGQUIT, que de acordo com a
+documentação existente diz "Quit from keyboard". SIQUIT faz com que um proceso termina e seja despejada memória.
+
+d) Acontece o mesmo que aconteceu na alínea b
+
+e) Ao executar o comando kill (-2 _PID_ para o SIGINT e -3 _PID_ para o SIGQUIT) enquanto o processo estava a correr, foram impressas as respetivas mensagens e os sinais foram
+ignorados. (Nota: quanto está configurado para ser ignorado o SIGINT, o SIGQUIT é executado corretamente, e vice-versa).
+
+f)
+
+g) Printf intefere com a execução do handler, sendo que manipula o estado sem sincornização, e os sinais são assincronos. Ou seja, é possível que o printf volte a ser executado
+numa parte do código onde não era deseja, criando bugs desnecessários. O writenão possui as características do printf, sendo seguro executar.

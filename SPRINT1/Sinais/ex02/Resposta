@@ -1,0 +1,12 @@
+2. a) Antes da execução do programa podes compila-lo graças ao makefile,
+depois executamo-lo, para sabermos o PID temos de executar o comando "pgrep -f ex02" no outro TERMINAL.
+
+b) Agora que sabemos o PID se quisermos pausar o processo "stopped" corremos no outro
+TERMINAL "kill -SIGSTOP PID" ou "kill -19 PID"
+
+c) Para o processo ex02 voltar a ser executado, corremos no outro TERMINAL "kill -SIGCONT PID" ou "kill -18 PID".
+
+d) Se quisermos terminar o processo de vez, corremos no outro TERMINAL "kill -SIGKILL PID" ou "kill -9 PID".
+
+f) Quando executamos o stop.c vemos que o resultado é o esperado em todas as alíneas ou seja acontece o mesmo em a/b/c/d
+que da primeira vez.

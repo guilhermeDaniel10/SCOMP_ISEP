@@ -1,0 +1,2 @@
+este ficheiro tem como objetivo ter palavras dentro de um ficheiro de texto, que por sua vez
+é um ficheiro

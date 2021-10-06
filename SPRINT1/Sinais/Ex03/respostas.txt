@@ -1,0 +1,8 @@
+3)a) A função signaction é a que melhor se adequa ao tratamento de sinais, por exemplo: signal() não impede que outros sinais cheguem enquanto um está em execução,
+enquanto o sigaction pode bloquear outros sinais até que o manupulador atual retorne. O comportamento do signal() varia consoante sistemas.Sigaction permite também
+obter mais informação sobre o sinal recebido pelo programa e é mais complexo.
+
+b) A função sigaction tem como parâmentro:
+    1- O inteiro que caracteriza o sinal a ser utilizado (SIGKILL e SIGSTOP são os únicos que não poderão ser chamados)
+    2- act define os detalhes do sinal a ser utilizado
+    3- oact regista os detalhes da última ação (caso não seja nulo)

@@ -1,0 +1,3 @@
+/* a) A variável a irá ter o mesmo valor em ambos os processos, sendo que esta variável será alterada da mesma maneira na execução
+do processo pai e filho. 
+Depois a variável b do processo pai será igual a c do processo filho.*/

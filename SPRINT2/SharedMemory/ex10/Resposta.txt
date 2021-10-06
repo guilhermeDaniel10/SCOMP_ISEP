@@ -1,0 +1,3 @@
+R: Alterando o número de filhos criados na variavel global NBR_CHILDS vemos que
+quantos menos filhos tivermos a aceder ao bloco de memória partilhado mais
+rápido o programa irá ficar!

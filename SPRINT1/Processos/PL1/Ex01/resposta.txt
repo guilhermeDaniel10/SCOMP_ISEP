@@ -1,0 +1,14 @@
+/*a) De acordo com a teoria do fork, "Geralmente o pai e o filho precisam de excutar
+código diferente, logo o fork retorna 0 para o filho e retorn o pid do filho para o pai",
+logo, imaginando que o primeiro processo a ser executado era o do filho, o output esperado
+seria: 1. x = 2 (...) 3. 0; x = 2   .Depois de ser executado o filho, preve-se então que
+o pai tenha o pid do filho, sendo o output esperado: 2. x = 0; (...) 3. 1234; x = 0
+Nota: Não se sabe qual o processo que será executado pelo CPU primeiro, pelo que poderia
+aparecer primeiro o output do pai seguido do filho, ou o inverso, dependendo do método de 
+escalonamento.*/
+
+/*b) Como foi referido na alínea anterior, se o método de escalonamento executar primeiro 
+o processo pai, sim, a linha 9 é executada primeiro que a 11. Caso contrário é executado
+o printf da linha 6 em seguida o da 11, e depois no processo pai é que é executada a linha
+9, voltando a ser executada a 11. Logo não é garantido que a linha 9 é executada sempre 
+primeiro que a 11.*/

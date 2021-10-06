@@ -1,0 +1,2 @@
+7) Os únicos sinais que não é possível bloquear são os: SIGKILL e SIGSTOP. Ao executar o sigfillset, todos os
+sinais são bloqueados exceto estes dois, daí no handler, estar definido para ser ignorado os dois (no ciclo for).

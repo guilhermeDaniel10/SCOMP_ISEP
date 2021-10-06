@@ -1,0 +1,12 @@
+a/b)  "Não, quando executamos o comando ps, vemos que temos um processo em execução,
+o processo pai, no nosso código com o PID = 2135. Vemos que um dos processos filho,
+neste caso o com o PID = 2137 terminou corretamente, porém o segundo processo filho, 
+com o PID = 2136 aparece com a resposta "<defunct>", ou seja o processo pai não 
+recebeu o exiting status deste pocesso. O processo filho com o PID = 2136, neste
+momento é um processo zombie, pois já não se encontra em funcionamneto mas continua
+na tabela de processos."
+
+c) "Ao executar o comando Kill do processo pai com o PID = 2135 vamos conseguir terminar
+o programa ex08, caso contrario será impossível terminar este programa, uma vez que 
+todos os outros processos já terminaram e este é o único que ainda continua a ser 
+executado." 
